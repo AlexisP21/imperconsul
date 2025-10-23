@@ -1,10 +1,9 @@
-//Animacion cambio color
-window.addEventListener("scroll", function () {
+// Función para actualizar el logo según la posición del scroll
+function actualizarLogo() {
   const header = document.getElementById("main-header");
   const logo = document.getElementById("logo");
   const scrollPosition = window.scrollY;
 
-  // Ajusta el número (por ejemplo 150) para cambiar antes o después
   if (scrollPosition > 160) {
     header.classList.add("scrolled");
     logo.src = "./static/img/1.png";
@@ -12,7 +11,13 @@ window.addEventListener("scroll", function () {
     header.classList.remove("scrolled");
     logo.src = "./static/img/2.3.png";
   }
-});
+}
+
+// Ejecutar al hacer scroll
+window.addEventListener("scroll", actualizarLogo);
+
+// Ejecutar también al cargar la página
+window.addEventListener("DOMContentLoaded", actualizarLogo);
 
 // Animación al hacer scroll
 window.addEventListener('scroll', () => {
