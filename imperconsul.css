@@ -197,39 +197,6 @@ header.scrolled .menu-btn-sup {
 
 }
 
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "Poppins", sans-serif;
-  background-color: #f8f9fa;
-  color: #222;
-  line-height: 1.6;
-}
-
-/* Sección inicial */
-.intro {
-  text-align: center;
-  padding: 80px 20px;
-  background: linear-gradient(135deg, #830000, #00264d);
-  color: white;
-  animation: fadeIn 1.5s ease-in-out;
-}
-
-.intro h1 {
-  font-size: 3rem;
-  margin-bottom: 10px;
-}
-
-.intro p {
-  font-size: 1.3rem;
-  opacity: 0.9;
-}
-
 /* Secciones de contenido */
 .area {
   padding: 60px 20px;
@@ -291,59 +258,85 @@ blockquote {
 }
 
 
-
-
 /* Sección Misión, Visión, Valores */
 .mision-vision {
-  max-width: 1200px;
-  margin: 60px auto;
-  padding: 20px;
+  padding: 4rem 2rem;
   text-align: center;
+  background-color: #f8f8f8;
 }
 
 .mision-vision h2 {
-  font-size: 2rem;
-  margin-bottom: 40px;
-  color: #000000;
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+  text-align: center;
 }
 
 /* Contenedor de 3 columnas */
 .contenedor-mv {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 2rem;
+  flex-wrap: wrap;
 }
 
 .mv-card {
-  background: white;
-  padding: 30px 20px;
-  border-radius: 12px;
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  flex: 1 1 30%;
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .mv-card i {
-  font-size: 3rem;
-  color: #9d0000;
-  margin-bottom: 15px;
+  font-size: 2.5rem;
+  color: #ffcc00;
+  margin-bottom: 1rem;
 }
 
 .mv-card h3 {
-  font-size: 1.5rem;
-  margin-bottom: 15px;
-  color: #9d0000;
+  margin-bottom: 1rem;
+  color: #333;
 }
 
 .mv-card p {
-  font-size: 1rem;
   color: #555;
+  line-height: 1.6;
   font-family: "Open Sans", sans-serif;
 }
 
 /* Hover animación */
 .mv-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 12px 24px #d1a806;
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/*Responsive para teléfonos*/
+@media (max-width: 768px) {
+
+  .contenedor-mv {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mv-card {
+    width: 90%;
+    max-width: 400px;
+  }
+
+  .mision-vision h2 {
+    font-size: 1.8rem;
+  }
+
+  .mv-card h3 {
+    font-size: 1.3rem;
+  }
+
+  .mv-card p {
+    font-size: 1rem;
+  }
+
 }
 
 
