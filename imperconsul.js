@@ -6,10 +6,10 @@ function actualizarLogo() {
 
   if (scrollPosition > 160) {
     header.classList.add("scrolled");
-    logo.src = "./static/img/1.png";
+    logo.src = "./static/img/1-removebg-preview.png";
   } else {
     header.classList.remove("scrolled");
-    logo.src = "./static/img/2.3.png";
+    logo.src = "./static/img/2.3-removebg-preview.png";
   }
 }
 
