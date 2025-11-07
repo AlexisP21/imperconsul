@@ -39,7 +39,7 @@ header.scrolled {
 /* Responsive */
 @media (max-width: 480px) {
   .logo {
-    width: 220px;
+    width: 260px;
   }
 }
 
@@ -349,3 +349,4 @@ blockquote {
   color: #888;
 
 }
+
