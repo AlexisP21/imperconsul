@@ -276,7 +276,7 @@ blockquote {
 @media (max-width: 600px) {
   .boton-flotante {
     bottom: 17px;
-    right: 45px;
+    right: 20px;
     font-size: 30px;
     padding: 10px 16px;
   }
@@ -349,4 +349,5 @@ blockquote {
   color: #888;
 
 }
+
 
