@@ -16,7 +16,7 @@ header {
   top: 0;
   z-index: 1000;
   transition: background-color 0.4s ease, box-shadow 0.4s ease;
-  background-color: #000000; /* transparente al inicio */
+  background-color: #000000;
 }
 
 /* Acción al hacer scroll */
@@ -39,10 +39,9 @@ header.scrolled {
 /* Responsive */
 @media (max-width: 480px) {
   .logo {
-    width: 260px;
+    width: 270px;
   }
 }
-
 
 .menu-sup {
   display: flex;
@@ -69,7 +68,7 @@ header.scrolled {
   min-height: 100%;
   object-fit: cover;
   z-index: -1;
-  /* filter: brightness(0.5); opaca el vídeo */
+  filter: brightness(0.7); /* Opaca el vídeo */
 }
 
 /* Texto dentro del vídeo */
@@ -85,7 +84,6 @@ header.scrolled {
 
 .contenido-hero h1 {
   font-size: 3rem;
-  /*font-family: "Nanum Myeongjo", serif;*/
   font-family: "Montserrat", sans-serif;
   margin-bottom: 1rem;
 }
@@ -168,7 +166,6 @@ blockquote {
   from { opacity: 0; transform: translateY(40px); }
   to { opacity: 1; transform: translateY(0); }
 }
-
 
 /* Sección Misión, Visión, Valores */
 .mision-vision {
@@ -347,7 +344,4 @@ blockquote {
   margin-top: 30px;
   font-size: 0.85rem;
   color: #888;
-
 }
-
-
